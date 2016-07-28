@@ -2,7 +2,7 @@
 	include 'config_service.php';
 	include 'gen_uuid_service.php';
 	session_start();
-	if (isset($_POST['simpan_po_detail'])) {
+	if (isset($_POST['simpan_produk'])) {
 		$id = gen_uuid();
 		$po = $_POST['po'];
 		$barang = $_POST['barang'];

@@ -29,66 +29,25 @@
         <nav class="navigation-bar-content">
             <a href="?page=home" class="element"><img src="../images/logo-gku.jpeg" width="128px"></a>
             <span class="element-divider"></span>
-            <?php 
-                if ($_SESSION['jabatan'] == "SALES" || $_SESSION['jabatan'] == "ADMIN") {
-            ?>
-            <div class="element">
-                <a class="dropdown-toggle" href="#">
-                    <span class="icon-newspaper"></span> Form Order</a>
-                <ul class="dropdown-menu" data-role="dropdown">
-                    <li><a href="?page=order">Input Order</a></li>
-                    <!-- <li><a href="?page=order_detail">Input Detail Order</a></li> -->
-                </ul>
-            </div>
-            
-            <?php 
-                } 
-                if ($_SESSION['jabatan'] == "SUPERVISOR" || $_SESSION['jabatan'] == "ADMIN") {
-            ?>
+            <a class="element" href="?page=produk_baru"><span class="icon-newspaper"></span> Input Produk Baru</a>
             <span class="element-divider"></span>
-            <a class="element" href="?page=approval"><span class="icon-checkmark"></span> Form Approval</a>
-            <?php 
-                } 
-                if ($_SESSION['jabatan'] == "STAFF EXPEDISI" || $_SESSION['jabatan'] == "ADMIN") {
-            ?>
+            <a class="element" href="?page=review_selling"><span class="icon-shipping"></span> Review Selling</a>
             <span class="element-divider"></span>
-            <a class="element" href="?page=sj"><span class="icon-shipping"></span> Form SJ</a>
-            <?php 
-                } 
-                if ($_SESSION['jabatan'] == "FINANCE" || $_SESSION['jabatan'] == "ADMIN") {
-            ?>
-            <span class="element-divider"></span>
-            <a class="element" href="?page=verifikasi"><span class="icon-copy"></span> Form Verifikasi</a>
-            <?php 
-                } 
-                if ($_SESSION['jabatan'] == "SOPIR" || $_SESSION['jabatan'] == "ADMIN") {
-            ?>
-            <span class="element-divider"></span>
-            <a class="element" href="?page=sopir"><span class="icon-cars"></span> SOPIR</a>
-            <?php } ?>
         </nav>
     </nav>
     <table width="100%" border="0">
         <tr align="right" height="30px">
             <td colspan="2" style="border-bottom: solid 1px black;">
-                <strong><?php echo $_SESSION['username']." | ".$_SESSION['nama']." | ".$_SESSION['jabatan']." | "; ?><a href="../system/logout_service.php">LOGOUT</a></strong>&emsp;
+                <strong><?php echo $_SESSION['nama']." | "; ?><a href="../system/logout_service.php">LOGOUT</a></strong>&emsp;
             </td>
         </tr>
         <tr align="center">
             <?php
                 if (isset($_GET['page'])) {
-                    if ($_GET['page'] == "order") {
-                        include 'order.php';
-                    } elseif ($_GET['page'] == "order_detail") {
-                        include 'order_detail.php';
-                    } elseif ($_GET['page'] == "sj") {
-                        include 'sj.php';
-                    } elseif ($_GET['page'] == "verifikasi") {
-                        include 'verifikasi.php';
-                    } elseif ($_GET['page'] == "approval") {
-                        include 'approval.php';
-                    } elseif ($_GET['page'] == "sopir") {
-                        echo "<script>window.location.href='sopir.php'</script>";
+                    if ($_GET['page'] == "produk_baru") {
+                        include 'produk_baru.php';
+                    } elseif ($_GET['page'] == "review_selling") {
+                        include 'review_selling.php';
                     } else {
                         echo '<td colspan="2"><img src="../images/utama.jpg" width=""></td>';
                     }

@@ -973,7 +973,7 @@ a {
   color: #999999 !important;
 }
 .metro .text-info {
-  color: #1ba1e2 !important;
+  color: #77DD77 !important;
 }
 .metro .text-alert {
   color: #e51400 !important;
@@ -2377,14 +2377,14 @@ a {
   position: relative;
 }
 .metro .breadcrumbs ul a:hover {
-  background: #1ba1e2;
+  background: #77DD77;
   color: #ffffff;
 }
 .metro .breadcrumbs ul a:hover:before {
-  border-color: #1ba1e2 #1ba1e2 #1ba1e2 transparent;
+  border-color: #77DD77 #77DD77 #77DD77 transparent;
 }
 .metro .breadcrumbs ul a:hover:after {
-  border-left-color: #1ba1e2;
+  border-left-color: #77DD77;
 }
 .metro .breadcrumbs ul a:before {
   content: "";
@@ -3460,7 +3460,7 @@ a {
   line-height: 14px !important;
 }
 .metro .side-menu li:hover {
-  background: #1ba1e2;
+  background: #77DD77;
   color: #ffffff;
 }
 .metro .side-menu .divider {
@@ -3795,7 +3795,7 @@ a {
 .metro .navbar {
   width: 100%;
   display: block;
-  background-color: #1ba1e2;
+  background-color: #77DD77;
   color: #ffffff;
 }
 .metro .navigation-bar .navigation-bar-content,
@@ -3844,7 +3844,7 @@ a {
 .metro .navbar .navigation-bar-content .element:hover,
 .metro .navigation-bar .navbar-content .element:hover,
 .metro .navbar .navbar-content .element:hover {
-  background-color: #00aafd;
+  background-color: #A5E3A5;
 }
 .metro .navigation-bar .navigation-bar-content .element > a.dropdown-toggle,
 .metro .navbar .navigation-bar-content .element > a.dropdown-toggle,
@@ -5386,7 +5386,7 @@ a {
   display: block;
   float: left;
   width: 0;
-  background-color: #1ba1e2;
+  background-color: #77DD77;
   height: 100%;
 }
 .metro .progress-bar.small {
@@ -5786,7 +5786,7 @@ a {
   color: #999999;
 }
 .metro .sidebar.light li.active a {
-  background-color: #1ba1e2;
+  background-color: #77DD77;
   color: #ffffff;
 }
 .metro .accordion > .accordion-frame {
@@ -5871,7 +5871,7 @@ a {
   color: #1d1d1d;
 }
 .metro .calendar .calendar-header {
-  background-color: #1ba1e2;
+  background-color: #77DD77;
   color: #ffffff;
 }
 .metro .calendar .calendar-header td,
@@ -5884,7 +5884,7 @@ a {
 }
 .metro .calendar .calendar-header td a:hover,
 .metro .calendar .calendar-header th a:hover {
-  background-color: #1ba1e2;
+  background-color: #77DD77;
   color: #ffffff;
 }
 .metro .calendar .calendar-actions td,
@@ -9061,7 +9061,7 @@ a {
   color: #ffffff;
 }
 .metro .label.info {
-  background-color: #1ba1e2;
+  background-color: #77DD77;
   color: #ffffff;
 }
 .metro hr {
@@ -9090,7 +9090,7 @@ a {
   background-color: #00aba9 !important;
 }
 .metro .bg-cyan {
-  background-color: #1ba1e2 !important;
+  background-color: #77DD77 !important;
 }
 .metro .bg-cobalt {
   background-color: #0050ef !important;
@@ -9249,7 +9249,7 @@ a {
   color: #00aba9 !important;
 }
 .metro .fg-cyan {
-  color: #1ba1e2 !important;
+  color: #77DD77 !important;
 }
 .metro .fg-cobalt {
   color: #0050ef !important;
@@ -9408,7 +9408,7 @@ a {
   outline-color: #00aba9 !important;
 }
 .metro .ol-cyan {
-  outline-color: #1ba1e2 !important;
+  outline-color: #77DD77 !important;
 }
 .metro .ol-cobalt {
   outline-color: #0050ef !important;
@@ -9567,7 +9567,7 @@ a {
   border-color: #00aba9 !important;
 }
 .metro .bd-cyan {
-  border-color: #1ba1e2 !important;
+  border-color: #77DD77 !important;
 }
 .metro .bd-cobalt {
   border-color: #0050ef !important;
@@ -9723,7 +9723,7 @@ a {
   background-color: #00aba9 !important;
 }
 .metro .bg-hover-cyan:hover {
-  background-color: #1ba1e2 !important;
+  background-color: #77DD77 !important;
 }
 .metro .bg-hover-cobalt:hover {
   background-color: #0050ef !important;
@@ -9879,7 +9879,7 @@ a {
   color: #00aba9 !important;
 }
 .metro .fg-hover-cyan:hover {
-  color: #1ba1e2 !important;
+  color: #77DD77 !important;
 }
 .metro .fg-hover-cobalt:hover {
   color: #0050ef !important;
@@ -10035,7 +10035,7 @@ a {
   background-color: #00aba9 !important;
 }
 .metro .bg-active-cyan:active {
-  background-color: #1ba1e2 !important;
+  background-color: #77DD77 !important;
 }
 .metro .bg-active-cobalt:active {
   background-color: #0050ef !important;
@@ -10191,7 +10191,7 @@ a {
   color: #00aba9 !important;
 }
 .metro .fg-active-cyan:active {
-  color: #1ba1e2 !important;
+  color: #77DD77 !important;
 }
 .metro .fg-active-cobalt:active {
   color: #0050ef !important;
@@ -10347,7 +10347,7 @@ a {
   background-color: #00aba9 !important;
 }
 .metro .bg-focus-cyan:focus {
-  background-color: #1ba1e2 !important;
+  background-color: #77DD77 !important;
 }
 .metro .bg-focus-cobalt:focus {
   background-color: #0050ef !important;
@@ -10503,7 +10503,7 @@ a {
   color: #00aba9 !important;
 }
 .metro .fg-focus-cyan:focus {
-  color: #1ba1e2 !important;
+  color: #77DD77 !important;
 }
 .metro .fg-focus-cobalt:focus {
   color: #0050ef !important;
@@ -10695,7 +10695,7 @@ a {
   background-size: 40px 40px;
 }
 .metro .ribbed-cyan {
-  background-color: #1ba1e2 !important;
+  background-color: #77DD77 !important;
   background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
