@@ -18,7 +18,7 @@
 			        		$sql .= " like '%".$account."%'"; 
 			        	}
 
-
+                      
 			        	// echo ">>>>>>>>>>>>>>".$sql;
 					?>
 					<legend>Review Selling</legend>
@@ -31,12 +31,12 @@
 					<table class="table bordered striped">
             <thead>
             <tr>
-                <th class="text-center">No</th>
-                <th class="text-center">Kode Produk</th>
-                <th class="text-center">Nama Produk</th>
-                <th class="text-center">Harga Produk</th>
-                <th class="text-center">Qty Sellout</th>
-                <th class="text-center">Value</th>
+                <th width="5px" class="text-center">No</th>
+                <th width="150px" class="text-center">Kode Produk</th>
+                <th width="200px" class="text-center">Nama Produk</th>
+                <th width="120px" align="right" class="text-center">Harga Produk</th>
+                <th width="120px" align="right" class="text-center">Qty Sellout</th>
+                <th width="0" align="right" class="text-center">Value</th>
             </tr>
             </thead>
             <tbody>
@@ -45,11 +45,17 @@
                 $total = 0;
                 $total2 = 0;
                 $count = 0;
-                $strQuery = "SELECT * FROM tbl_barang ORDER BY nama_barang";
+                $strQuery = "   SELECT  tb.harga as harga,  
+                                        tb.kode_barang as kode_barang,
+                                        tb.nama_barang as nama_barang,
+                                        s.qty as qty
+                                FROM sales s INNER JOIN tbl_barang tb ON s.id_barang = tb.id 
+                                WHERE s.account = '$account'
+                                ORDER BY tb.nama_barang";
                 $result = mysql_query($strQuery) or die(mysql_error());
                 while($arrResult = mysql_fetch_array($result)) {
                     $count++;
-            		$qtySell = rand(5, 15);
+            		$qtySell = $arrResult['qty'];
             		$total = $total + $qtySell*$arrResult['harga'];
             		$total2 = $total2 + $qtySell;
             ?>
@@ -58,8 +64,8 @@
                 <td class="right"><?php echo $arrResult['kode_barang'];?></td>
                 <td class="right"><?php echo $arrResult['nama_barang'];?></td>
                 <td class="right" align="right"><?php echo number_format($arrResult['harga'])?></td>
-                <td align="center"><?php echo number_format($qtySell) ?></td>
-                <td align="center"><?php echo number_format($qtySell*$arrResult['harga']) ?></td>
+                <td align="right"><?php echo number_format($qtySell) ?></td>
+                <td align="right"><?php echo number_format($qtySell*$arrResult['harga']) ?></td>
             </tr>
             <?php } 
             ?>

@@ -3,12 +3,14 @@
     session_start();
     if (empty($_SESSION['username']) || empty($_SESSION['password']) ) {
         echo "<script>window.location.href='../'</script>";
+    } else if ($_SESSION['jabatan'] == "SALES") {
+        echo "<script>window.location.href='mobile/'</script>";
     } else {
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PO Online</title>
+    <title>Sales Online</title>
     <meta charset="UTF-8">
     <!-- <link rel="stylesheet" href="../lib/chosen/style.css"> -->
     <!-- <link rel="stylesheet" href="../lib/chosen/prism.css"> -->

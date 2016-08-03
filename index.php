@@ -6,7 +6,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>PO Online</title>
+    <title>Sales Online</title>
     <link rel="stylesheet" type="text/css" href="lib/jquery/themes/default/easyui.css">
     <link rel="stylesheet" type="text/css" href="lib/jquery/themes/icon.css">
     <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>

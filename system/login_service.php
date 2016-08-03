@@ -12,6 +12,7 @@ if (isset($_POST['btn_login'])) {
 	$username = $arr['username'];
 	$jabatan = $arr['jabatan'];
 	$nama = $arr['nama'];
+	$account = $arr['account'];
 	// $role = $arr['has_role'];
 
 	if (($userN == $username && $pass == $password) && ($userN != "" && $pass != "")) {
@@ -22,6 +23,7 @@ if (isset($_POST['btn_login'])) {
 		$_SESSION['user_sid'] = $id;
 		$_SESSION['nama'] = $nama;
 		$_SESSION['jabatan'] = $jabatan;
+		$_SESSION['account'] = $account;
 
 		echo "<script> alert('Selamat datang ! '); window.location.href='../form/halaman_utama.php';</script>";
 	} else {
